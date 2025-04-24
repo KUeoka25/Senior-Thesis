@@ -1,0 +1,44 @@
+
+\begin{table}[htbp]
+   \caption{Table: Regression Results for Home Location (with Fixed Effects and Clustered SEs)}
+   \bigskip
+   \centering
+   \begin{tabular}{lcc}
+      \toprule
+       & \multicolumn{2}{c}{log\_Location\_Home}\\
+                                                & (1)             & (2)\\  
+      \midrule 
+      Post-2022                                 & 0.0844$^{***}$  & 0.0768$^{***}$\\   
+                                                & (0.0115)        & (0.0114)\\   
+      Log 30-day MA kWh Price (scaled)          & 0.0113          & 0.0137$^{*}$\\   
+                                                & (0.0075)        & (0.0073)\\   
+      Avg. Max Temp (scaled)                    & 0.8015$^{***}$  & 0.8507$^{***}$\\   
+                                                & (0.0275)        & (0.0274)\\   
+      (Avg. Max Temp)\^2 (scaled)               & 0.2062$^{***}$  & 0.2255$^{***}$\\   
+                                                & (0.0057)        & (0.0072)\\   
+      Avg. Humidity (scaled)                    & 0.0003          & 0.0177$^{*}$\\   
+                                                & (0.0070)        & (0.0094)\\   
+      (Avg. Humidity)\^2 (scaled)               & -0.0269$^{***}$ & -0.0295$^{***}$\\   
+                                                & (0.0029)        & (0.0041)\\   
+      Post-2022 × Log 30-day MA kWh Price       & -0.0515$^{***}$ & -0.0552$^{***}$\\   
+                                                & (0.0091)        & (0.0088)\\   
+      Avg. Max Temp × Avg. Humidity             &                 & 0.0613$^{***}$\\   
+                                                &                 & (0.0097)\\   
+      Avg. Max Temp × (Avg. Humidity)\^2        &                 & -0.0260$^{***}$\\   
+                                                &                 & (0.0055)\\   
+      (Avg. Max Temp)\^2 × Avg. Humidity        &                 & 0.0188$^{***}$\\   
+                                                &                 & (0.0061)\\   
+      (Avg. Max Temp)\^2 × (Avg. Humidity)\^2   &                 & -0.0072$^{**}$\\   
+                                                &                 & (0.0028)\\   
+       \\
+      Observations                              & 43,837          & 43,837\\  
+      R$^2$                                     & 0.74495         & 0.74806\\  
+       \\
+      Pref\_Name fixed effects                  & $\checkmark$    & $\checkmark$\\   
+      Month fixed effects                       & $\checkmark$    & $\checkmark$\\   
+      day\_of\_week fixed effects               & $\checkmark$    & $\checkmark$\\   
+      \bottomrule
+   \end{tabular}
+\end{table}
+
+
